@@ -14,7 +14,7 @@ if (file_exists(__DIR__ . '/../../vendor/autoload.php')) {
 
 // Install base location
 if (!defined('TEST_ROOT')) {
-    define('TEST_ROOT', realpath(__DIR__ . '/../../'));
+    define('TEST_ROOT', dirname(dirname(__DIR__)));
 }
 
 // PHPUnit's base location
